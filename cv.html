@@ -26,7 +26,6 @@ h1 {
 
 h2 {
     padding: 0;
-	padding-bottom: 0.2em;
 	margin: 0;
 	border: 0;
 	font-size: 1.2em;
@@ -74,17 +73,6 @@ dt {
 	border-right: 1px solid #999;
 }
 
-dd {
-	width: 600px;
-	float: right;
-}
-
-dd.clear {
-	float: none;
-	margin: 0;
-	height: 15px;
-}
-
 td.clear {
     padding-bottom: 2em;
 }
@@ -94,7 +82,7 @@ td.category {
     padding: 0 26px 0 0;
     width: 150px;
     float: left;
-    height: 100px;
+    min-height: 3em;
 }
 
 td.content {
@@ -189,6 +177,28 @@ td.content {
 <table>
 
 <tr>
+
+<td class="category">
+	<h2>About Me</h2>
+</td>
+
+<td class="content">
+	<p class="line-spacing">
+		I am an responsible, challenge driven computer science student
+		interested in opportunities to develop in a working environment.
+		I have for many years been programming as a hobby,
+		and since i started university I have felt that my knowledge could be better used.
+		I have worked in smaller group hobby projects,
+		but to experience working in a office environment and make something truely
+		useful is something that I would love to experience.
+	<p>
+</td>
+
+</tr>
+
+<tr><td class="clear"></td></tr>
+
+<tr>
 <td class="category">
     <h2>Education</h2>
 </td>
@@ -198,6 +208,11 @@ td.content {
     <div class="tab"><p>
     	Blekinge Institute of Technology <br>
     	Bachelor of Science, Software Engineering <br>
+		
+		<p style="font-size: 0.85em; padding-top: 0.3em;">
+			<b>Year 1:</b> Analysis and Problem Solving, Discrete Mathematics, Introduction to Programming in C++, Object Oriented Programming in C++, Algorithms and Datastructures, Computer- and telecommunication, Computer Organization, Software Design <br>
+			<b>Year 2:</b> Individual Programming Project, Group Programming Project, Database Systems, Realtime- and Operatingsystems, Compiler Design and Interpretation Technique, Introduction to UNIX and Linux
+		</p>
     </p></div>
 
     <p class="date">2011 - 2014</p>
@@ -213,12 +228,13 @@ td.content {
     <div class="tab"><p>
     	Long Beach, California, USA
     </p></div>
-
+<!--
     <p class="date">2001 - 2011</p>
     <h5>Elementary</h5>
     <div class="tab"><p>
     	Tunaskolan, Lund Sweden
     </p></div>
+-->
 </td>
 </tr>
 
@@ -230,6 +246,15 @@ td.content {
 </td>
 
 <td class="content">
+
+	<p class="date">2016 January-May</p>
+	<h5>Software Development Intern</h5>
+	<div class="tab"><p>
+		Ericsson, Karlskrona<br>
+		I got assigned here for a group project course at university.
+		We are 5 students developing a prototype at their R&ampD/innovation department.
+		I am sadly not allowed to share what we are working on. 
+	</p></div>
 
     <p class="date">2014 June-August, 2015 June-July</p>
     <h5>Operator</h5>
@@ -307,10 +332,10 @@ td.content {
 	<tr><td>MeteorJS</td>	<td>Basic</td></tr>
 	<tr><td>SDL2</td>		<td>Basic</td></tr>
 	<tr><td>SFML</td>		<td>Basic</td></tr>
-    <tr><td>Irrlicht 3D</td><td>Basic</td></tr>
     <tr><td>libgdx</td>     <td>Basic</td></tr>
-	<tr><td>Android SDK</td><td>Familiar</td></tr>
+	<tr><td>Android SDK</td><td>Basic</td></tr>
     <tr><td>Android NDK</td><td>Novice</td></tr>
+    <tr><td>Irrlicht 3D</td><td>Novice</td></tr>
 </table>
 </td>
 </tr>
@@ -345,7 +370,7 @@ td.content {
 </div>
 
 <div class="footer">
-Last updated: 21/09/15
+Last updated: 17/02/16
 </div>
 
 
