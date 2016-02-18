@@ -9,12 +9,12 @@
 */
 html *
 {
-   color: #000 !important;
+   color: #000;
    font-family: Arial !important;
 }
 
 body {
-    background-color: #aaa;
+    background-color: #222;
 	max-width: 60em;
 	margin: 0 auto;
 }
@@ -24,53 +24,45 @@ h1 {
     margin-bottom: 0.2em;
 }
 
-h2 {
+h3 {
     padding: 0;
 	margin: 0;
 	border: 0;
-	font-size: 1.2em;
+	font-size: 1.3em;
+	font-weight: normal;
+}
+
+h4 {
+	padding: 0;
+	padding-bottom: 0.2em;
+	margin: 0;
+	border: 0;
+	font-size: 1.3em;
 	font-weight: normal;
 }
 
 h5 {
 	padding: 0;
-	padding-bottom: 0.2em;
 	margin: 0;
 	border: 0;
-	font-size: 1.2em;
+	font-size: 1.05em;
 	font-weight: normal;
 }
 
-p, tr{
+p {
 	margin: 0;
 	padding: 0;
-	padding-bottom: 0.1em;
-	font-size: 1em;
-}
+	font-size: 0.9em; }
 
+ps { font-size: 0.75em; }
 
-a {
-	color: #000;
-}
+a { color: #000; }
+a:hover { color: #333; }
+a:visited { color: #222; }
 
-a:hover {
-	color: #333;
-}
-
-a:visited {
-	color: #222;
-}
-
-dt {
-	font-style: italic;
-	font-weight: bold;
-	font-size: 18px;
-	text-align: right;
-	padding: 0 26px 0 0;
-	width: 150px;
-	float: left;
-	height: 100px;
-	border-right: 1px solid #999;
+td {
+	margin: 0;
+	padding: 0;
 }
 
 td.clear {
@@ -78,15 +70,17 @@ td.clear {
 }
 
 td.category {
-    font-size: 18px;
-    padding: 0 26px 0 0;
-    width: 150px;
+    font-size: 1.2em;
+	padding: 0;
+	padding-top: 0.5em;
+	padding-right: 0.5em;
+    width: 8em;
     float: left;
     min-height: 3em;
 }
 
 td.content {
-    border-left: 2px solid #999;
+	border-left: 1px solid #555;
     padding-left: 2em;
 }
 
@@ -104,19 +98,10 @@ td.content {
 
 
 .footer {
+	color: gray;
 	text-align: center;
 	padding-top: 2em;
 	padding-bottom: 2em;
-}
-
-.picture {
-	position: fixed;
-	top: 0;
-	right: 0;
-
-	width: 35%;
-
-	padding: 2em;
 }
 
 .tab {
@@ -124,15 +109,10 @@ td.content {
 	padding-left: 2em;
 }
 
-.date {
-	font-size: 0.8em;
-	color: #ccc;
-}
-
-#me {
-	border: 1px solid #AAA;
+#profilepic {
 	border-radius: 0.5em;
 	float: left;
+	width: 100%;
 }
 
 .contact-category {
@@ -151,8 +131,16 @@ td.content {
 <body>
 <div class="container">
 
-<img id="me" alt="An picture of me" src="https://avatars2.githubusercontent.com/u/1398500?v=3&amp;s=460" style="height: 150px; ">
-<div style="display: inline-block; padding-bottom: 2em; padding-left: 2em;">
+<table>
+
+<tr>
+
+<td class="category" style="overflow: hidden;">
+<img id="profilepic" alt="An picture of me" src="https://avatars2.githubusercontent.com/u/1398500?v=3&amp;s=460">
+</td>
+
+<td class="content" style="border-left: 0;">
+<div style="display: inline-block;">
 	<h1>Johan Bjäreholt</h1>
 	<table>
 	<tr>
@@ -172,65 +160,45 @@ td.content {
 		<td><p class="contact-value">371 31 Karlskrona</p></td>
 	</tr>
 	</table>
-</div>
-
-<table>
-
-<tr>
-
-<td class="category">
-	<h2>About Me</h2>
-</td>
-
-<td class="content">
-	<p class="line-spacing">
-		I am a responsible, challenge driven computer science student
-		interested in opportunities to develop in a working environment.
-		I have for many years been programming as a hobby,
-		and since I started university I have felt that my knowledge could be better used.
-		I have worked in smaller group hobby projects,
-		but to experience working in a office environment and make something truely
-		useful is something that I would love to experience.
-	<p>
 </td>
 
 </tr>
 
 <tr><td class="clear"></td></tr>
-
 <tr>
 <td class="category">
-    <h2>Education</h2>
+    <h3>Education</h3>
 </td>
 <td class="content">
-    <p class="date">2014 - present</p>
-    <h5>University</h5>
-    <div class="tab"><p>
-    	Blekinge Institute of Technology <br>
-    	Bachelor of Science, Software Engineering <br>
-		
-		<p style="font-size: 0.85em; padding-top: 0.3em;">
+    <ps>2014 - present</ps>
+    <h4>University</h4>
+    <div class="tab">
+    	<h5>Blekinge Institute of Technology </h5>
+	    <p>Bachelor of Science, Software Engineering </p>
+		<div style="padding-top: 0.4em;"></div>	
+		<ps>
 			<b>Year 1:</b> Analysis and Problem Solving, Discrete Mathematics, Introduction to Programming in C++, Object Oriented Programming in C++, Algorithms and Datastructures, Computer- and telecommunication, Computer Organization, Software Design <br>
 			<b>Year 2:</b> Individual Software Project, Group Software Project, Database Systems, Realtime- and Operatingsystems, Compiler Design and Interpretation Technique, Introduction to UNIX and Linux
-		</p>
-    </p></div>
+		</ps>
+    </div>
 
-    <p class="date">2011 - 2014</p>
-    <h5>Gymnasium</h5>
-    <div class="tab"><p>
-    	Polhemskolan, Lund Sweden <br>
-    	Technology Programme <br>
-    	Computer Science and Web Development
-    </p></div>
+    <ps>2011 - 2014</ps>
+    <h4>High School</h4>
+    <div class="tab">
+    	<h5>Polhemskolan</h5>
+    	<p>Technology Programme </p>
+    	<p>Specialization in Computer Science and Web Development<br>
+		Lund, Sweden</p>
+    </div>
 
-    <p class="date">July 2012</p>
-    <h5>English Education (EF)</h5>
+    <ps>July 2012</ps>
+    <h4>English Education (EF)</h4>
     <div class="tab"><p>
     	Long Beach, California, USA
     </p></div>
 <!--
-    <p class="date">2001 - 2011</p>
-    <h5>Elementary</h5>
+    <ps>2001 - 2011</ps>
+    <h4>Elementary</h4>
     <div class="tab"><p>
     	Tunaskolan, Lund Sweden
     </p></div>
@@ -242,54 +210,54 @@ td.content {
 
 <tr class="section">
 <td class="category">
-    <h2>Job Experience</h2>
+    <h3>Work Experience</h3>
 </td>
 
 <td class="content">
 
-	<p class="date">2016 January-May</p>
-	<h5>Software Development Intern</h5>
-	<div class="tab"><p>
-		Ericsson, Karlskrona<br>
-		I got assigned here for a group project course at university.
+	<ps>2016 January-May</ps>
+	<h4>Software Development Intern</h4>
+	<div class="tab">
+		<h5>Ericsson, Karlskrona</h5>
+		<p> I got assigned here for a group project course at University.
 		We are 5 students developing a prototype at their R&ampD/innovation department.
-		I am unfortunately not allowed to share what we are working on. 
+		I am unfortunately not allowed to share what we are working on. </p>
 	</p></div>
 
-    <p class="date">2014 June-August, 2015 June-July</p>
-    <h5>Operator</h5>
+    <ps>2014 June-August, 2015 June-July</ps>
+    <h4>Operator</h4>
     <div class="tab"><p>
-    	Smurfit Kappa Sverige AB, Eslöv<br>
-    	In 2015 I worked at a rotary diecutter for corrugated paper with 3 printing units.<br>
-    	In 2014 I worked at a folding-gluing machine for corrugated boxes.
+    	<h5>Smurfit Kappa Sverige AB, Esl&oumlv</h5>
+    	<p>In 2015 I worked at a rotary diecutter for corrugated paper with 3 printing units.<br>
+    	In 2014 I worked at a folding-gluing machine for corrugated boxes. </p>
+    </div>
+
+    <ps>2013 June-August</ps>
+    <h4>Flowchart Designer</h4>
+    <div class="tab">
+    	<h5>Smurfit Kappa Sverige AB, Eslöv<br></h5>
+    	<p>Worked on a project revising the management system for the swedish division of the company.</p>
     </p></div>
 
-    <p class="date">2013 June-August</p>
-    <h5>Flowchart Designer</h5>
+    <ps>2012 July</ps>
+    <h4>Assistant</h4>
+    <div class="tab">
+    	<h5>Management Partners AB, Malmö </h5>
+    	<p>Helped out with miscellaneous office tasks such as organizing events, general office services and computer related issues.</p>
+    </div>
+
+    <ps>2011 July</ps>
+    <h4>IT-helpdesk assistant</h4>
     <div class="tab"><p>
-    	Smurfit Kappa Sverige AB, Eslöv<br>
-    	Worked on a project revising the management system for the swedish division of the company.
+    	<h5>Rexam Beverage Can Fosie AB, Malmö </h5>
+    	<p>Assisting at the company's helpdesk with installing and repairing computers as well as assisting people with computer related issues.</p>
     </p></div>
 
-    <p class="date">2012 July</p>
-    <h5>Assistant</h5>
+    <ps>June 2010, June 2011</ps>
+    <h4>Assistant</h4>
     <div class="tab"><p>
-    	Management Partners AB, Malmö <br>
-    	Helped out with miscellaneous office tasks such as organizing events, general office services and computer related issues.
-    </p></div>
-
-    <p class="date">2011 July</p>
-    <h5>IT-helpdesk assistant</h5>
-    <div class="tab"><p>
-    	Rexam Beverage Can Fosie AB, Malmö <br>
-    	Assisting at the company's helpdesk with installing and repairing computers as well as assisting people with computer related issues.
-    </p></div>
-
-    <p class="date">June 2010, June 2011</p>
-    <h5>Assistant</h5>
-    <div class="tab"><p>
-    	Fernlund Mäklare AB, Lund <br>
-    	Handing out flyers as well as helping out with general office tasks.
+    	<h5>Fernlund Mäklare AB, Lund </h5>
+    	<p>Handing out flyers as well as helping out with general office tasks.</p>
     </p></div>
 
 </td>
@@ -300,14 +268,15 @@ td.content {
 <tr><td class="clear"></td></tr>
 
 <td class="category">
-    <h2>Computer Science</h2>
+    <h3>Computer Science</h3>
 </td>
 
 <td class="content">
 <table style="width: 100%;">
 <tr>
 <td style="vertical-align: top; width: 50%;">
-<h5>Programming Languages</h5>
+<h4>Programming Languages</h4>
+<p>
 <table>
     <tr><td>C++</td>		<td>Strong</td></tr>
     <tr><td>Python</td>		<td>Strong</td></tr>
@@ -316,17 +285,19 @@ td.content {
     <tr><td>HTML</td>		<td>Experienced</td></tr>
     <tr><td>CSS/SASS</td>	<td>Experienced</td></tr>
     <tr><td>SQL</td>		<td>Experienced</td></tr>
+    <tr><td>Bash</td>		<td>Experienced</td></tr>
     <tr><td>JavaScript</td>	<td>Basic</td></tr>
     <tr><td>NodeJS</td>     <td>Basic</td></tr>
-    <tr><td>Bash</td>		<td>Basic</td></tr>
     <tr><td>C#</td>			<td>Basic</td></tr>
-    <tr><td>Assembly</td>	<td>Familiar</td>
+    <tr><td>Assembly</td>	<td>Novice</td>
 </table>
+</p>
 
 </td>
 <td style="vertical-align: top; width: 50%;">
 
-<h5>Libraries & Frameworks</h5>
+<h4>Libraries & Frameworks</h4>
+<p>
 <table>
 	<tr><td>AngularJS</td>	<td>Basic</td></tr>
 	<tr><td>MeteorJS</td>	<td>Basic</td></tr>
@@ -337,6 +308,7 @@ td.content {
     <tr><td>Android NDK</td><td>Novice</td></tr>
     <tr><td>Irrlicht 3D</td><td>Novice</td></tr>
 </table>
+</p>
 </td>
 </tr>
 </table>
@@ -349,18 +321,38 @@ td.content {
 </tr>
 
 <tr><td class="clear"></td></tr>
+<tr>
+<td class="category">
+	<h3>About Me</h3>
+</td>
+
+<td class="content">
+	<p class="line-spacing">
+		I am a responsible, challenge driven computer science student
+		interested in opportunities to develop in a working environment.
+		I have for many years been programming as a hobby,
+		and since I started university I have felt that my knowledge could be put to better use.
+		I have worked in smaller group hobby projects,
+		but to experience working in a office environment and make something truely
+		useful is something that I would love to experience.
+	<p>
+</td>
+
+</tr>
+
+<tr><td class="clear"></td></tr>
 
 <tr>
 <td class="category">
-    <h5>Hobbies and interests</h5>
+    <h4>Hobbies and interests</h4>
 </td>
 <td class="content">
 <p class="line-spacing">
-    I have a soft spot for creating things, and it doesn't matter whether it's woodworking, electrical engineering or programming.
-    During the past years i have had a few DIY projects, including building multiple portable speakers, wood monitor stands, soldering amplifier kits and tinkering with Arduino.
-    I try to always work on at least one software project, and my favorite projects to date are my own tiling window manager, music player+server and multiple smaller games.
-    I have also helped out on a few Open Source projects such as a SoundCloud downloader and a BitCoin trader.
-    Staying healthy is also important, so i enjoy jogging and going to the gym a few times a week.
+	I have a soft spot for creating things, and it doesn't matter whether it's woodworking, electrical engineering or programming.
+	During the past years I have had a few DIY projects, including building multiple portable speakers, wood monitor stands, soldering amplifier kits and tinkering with Arduino.
+	I try to always work on at least one software project, and my favorite projects to date are my own tiling window manager, music player+server and multiple smaller games.
+	I have also helped out on a few Open Source projects such as a SoundCloud downloader, a home automation system and a Bitcoin trader.
+	Staying healthy is also important, so I enjoy jogging and going to the gym a few times a week.
 </p>
 </td>
 </tr>
@@ -370,7 +362,7 @@ td.content {
 </div>
 
 <div class="footer">
-Last updated: 17/02/16
+Last updated: 2016/02/18
 </div>
 
 
