@@ -1,0 +1,121 @@
+/*
+	Default
+*/
+html *
+{
+   color: #000;
+   font-family: Arial !important;
+}
+
+body {
+    background-color: #222;
+	max-width: 60em;
+	margin: 0 auto;
+}
+h1 {
+	padding: 0;
+	margin-top: 0;
+    margin-bottom: 0.2em;
+}
+
+h3 {
+    padding: 0;
+	margin: 0;
+	border: 0;
+	font-size: 1.3em;
+	font-weight: normal;
+}
+
+h4 {
+	padding: 0;
+	padding-bottom: 0.2em;
+	margin: 0;
+	border: 0;
+	font-size: 1.3em;
+	font-weight: normal;
+}
+
+h5 {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	font-size: 1.05em;
+	font-weight: normal;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+	font-size: 0.9em; }
+
+ps { font-size: 0.75em; }
+
+a { color: #000; }
+a:hover { color: #333; }
+a:visited { color: #222; }
+
+td {
+	margin: 0;
+	padding: 0;
+    padding-right: 2em;
+}
+
+td.clear {
+    padding-bottom: 2em;
+}
+
+td.category {
+    font-size: 1.2em;
+	padding: 0;
+	padding-top: 0.5em;
+	padding-right: 0.5em;
+    width: 8em;
+    float: left;
+    min-height: 3em;
+}
+
+td.content {
+	border-left: 1px solid #555;
+    padding-left: 2em;
+}
+
+/*
+	Positioning
+*/
+.container {
+	margin: 0.5em;
+	padding: 2em;
+	background-color: #fff;
+
+	border: 1px solid #fff;
+	border-radius: 0.4em;
+}
+
+
+.footer {
+	color: gray;
+	text-align: center;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+.tab {
+	padding-bottom: 1em;
+	padding-left: 2em;
+}
+
+#profilepic {
+	border-radius: 0.5em;
+	float: left;
+	width: 100%;
+}
+
+.contact-category {
+	font-weight: bold;
+	text-align: right;
+    padding-right: 1em;
+}
+
+.line-spacing {
+	line-height: 150%;
+}
