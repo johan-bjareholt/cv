@@ -5,6 +5,129 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+<style>
+/*
+	Default
+*/
+html *
+{
+   color: #000;
+   font-family: Arial !important;
+}
+
+body {
+    background-color: #222;
+	max-width: 60em;
+	margin: 0 auto;
+}
+h1 {
+	padding: 0;
+	margin-top: 0;
+    margin-bottom: 0.2em;
+}
+
+h3 {
+    padding: 0;
+	margin: 0;
+	border: 0;
+	font-size: 1.3em;
+	font-weight: normal;
+}
+
+h4 {
+	padding: 0;
+	padding-bottom: 0.2em;
+	margin: 0;
+	border: 0;
+	font-size: 1.3em;
+	font-weight: normal;
+}
+
+h5 {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	font-size: 1.05em;
+	font-weight: normal;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+	font-size: 0.9em; }
+
+ps { font-size: 0.75em; }
+
+a { color: #000; }
+a:hover { color: #333; }
+a:visited { color: #222; }
+
+td {
+	margin: 0;
+	padding: 0;
+    padding-right: 2em;
+}
+
+td.clear {
+    padding-bottom: 2em;
+}
+
+td.category {
+    font-size: 1.2em;
+	padding: 0;
+	padding-top: 0.5em;
+	padding-right: 0.5em;
+    width: 8em;
+    float: left;
+    min-height: 3em;
+}
+
+td.content {
+	border-left: 1px solid #555;
+    padding-left: 2em;
+}
+
+/*
+	Positioning
+*/
+.container {
+	margin: 0.5em;
+	padding: 2em;
+	background-color: #fff;
+
+	border: 1px solid #fff;
+	border-radius: 0.4em;
+}
+
+
+.footer {
+	color: gray;
+	text-align: center;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+.tab {
+	padding-bottom: 1em;
+	padding-left: 2em;
+}
+
+#profilepic {
+	border-radius: 0.5em;
+	float: left;
+	width: 100%;
+}
+
+.contact-category {
+	font-weight: bold;
+	text-align: right;
+    padding-right: 1em;
+}
+
+.line-spacing {
+	line-height: 150%;
+}
+</style>
 
 <body>
 <div class="container">
@@ -70,7 +193,7 @@
     <h3>Education</h3>
 </td>
 <td class="content">
-    <ps>2014 - present</ps>
+    <ps>2014 - 2017</ps>
     <h4>University</h4>
     <div class="tab">
     	<h5>Blekinge Institute of Technology </h5>
@@ -79,17 +202,16 @@
 		<ps>
 			<b>Year 1:</b> Analysis and Problem Solving, Discrete Mathematics, Introduction to Programming in C++, Object Oriented Programming in C++, Algorithms and Datastructures, Computer- and telecommunication, Computer Organization, Software Design <br>
             <b>Year 2:</b> Individual Software Project, Group Software Project, Database Systems, Realtime- and Operatingsystems, Compiler Design and Interpretation Technique, Introduction to UNIX and Linux <br>
-            <b>Year 3:</b> Linear Algebra, Programming in a UNIX environment, 3D Programming 1, Software Optimization, Large Group Software Project, Bachelor's Thesis
+            <b>Year 3:</b> Linear Algebra, Programming in a UNIX environment, Linux as a Operating System, Software Optimization, Large Group Software Project, Bachelor's Thesis
 		</ps>
     </div>
 
     <ps>2011 - 2014</ps>
     <h4>High School</h4>
     <div class="tab">
-    	<h5>Polhemskolan</h5>
+    	<h5>Polhemskolan, Lund</h5>
     	<p>Technology Programme </p>
-    	<p>Specialization in Computer Science and Web Development<br>
-		Lund, Sweden</p>
+    	<p>Specialization in Computer Science and Web Development</p>
     </div>
 <!--
     <ps>July 2012</ps>
@@ -117,6 +239,14 @@
 
 <td class="content">
 
+    <ps>2017 August - Present</ps>
+	<h4>Software Engineer</h4>
+	<div class="tab">
+		<h5>Axis Communications, Lund</h5>
+		<p>Working at the Streaming department which are responsible for the streaming of audio, video and metadata on Axis Network Cameras.
+        Our streaming stack is primarily written in C with GStreamer and GLib+GObject with a focus on reliability and performance.</p>
+	</p></div>
+
 	<ps>2016 June-July</ps>
 	<h4>Continuous Integration and Automation Engineer</h4>
 	<div class="tab">
@@ -142,6 +272,7 @@
     	In 2014 I worked at a folding-gluing machine for corrugated boxes. </p>
     </div>
 
+<!--
     <ps>2013 June-August</ps>
     <h4>Flowchart Designer</h4>
     <div class="tab">
@@ -149,14 +280,12 @@
     	<p>Worked on a project revising the management system for the swedish division of the company.</p>
     </p></div>
 
-<!--
     <ps>2012 July</ps>
     <h4>Assistant</h4>
     <div class="tab">
     	<h5>Management Partners AB, Malmö </h5>
     	<p>Helped out with miscellaneous office tasks such as organizing events, general office services and computer related issues.</p>
     </div>
--->
 
     <ps>2011 July</ps>
     <h4>IT-helpdesk assistant</h4>
@@ -164,7 +293,7 @@
     	<h5>Rexam Beverage Can Fosie AB, Malmö </h5>
     	<p>Assisting at the company's helpdesk with installing and repairing computers as well as assisting people with computer related issues.</p>
     </p></div>
-<!--
+
     <ps>June 2010, June 2011</ps>
     <h4>Assistant</h4>
     <div class="tab"><p>
@@ -191,14 +320,13 @@
 <h4>Programming Languages</h4>
 <p>
 <table>
-    <tr><td>C++</td>		<td>Strong</td></tr>
+    <tr><td>C</td>			<td>Strong</td></tr>
     <tr><td>Python</td>		<td>Strong</td></tr>
-    <tr><td>C</td>			<td>Experienced</td></tr>
+    <tr><td>C++</td>		<td>Strong</td></tr>
+    <tr><td>Rust</td>		<td>Experienced</td></tr>
     <tr><td>Bash</td>		<td>Experienced</td></tr>
-    <tr><td>Java</td>		<td>Experienced</td></tr>
-    <tr><td>JavaScript+NodeJS</td>	<td>Basic</td></tr>
-    <tr><td>Assembly (x86_64)</td>  <td>Basic</td></tr>
-    <tr><td>C#</td>			<td>Basic</td></tr>
+    <tr><td>JavaScript</td>	<td>Basic</td></tr>
+    <tr><td>x86 Assembly</td>  <td>Basic</td></tr>
     <tr><td>Scala</td>		<td>Basic</td></tr>
 </table>
 </p>
@@ -209,27 +337,19 @@
 <h4>Libraries & Frameworks</h4>
 <p>
 <table>
-    <tr><td>OpenGL</td>     <td>Basic</td></tr>
 	<tr><td>SDL2</td>		<td>Basic</td></tr>
-	<tr><td>SFML</td>		<td>Basic</td></tr>
-    <tr><td>libgdx</td>     <td>Basic</td></tr>
-	<tr><td>Vue.js</td>	    <td>Basic</td></tr>
-	<tr><td>AngularJS</td>	<td>Novice</td></tr>
-	<tr><td>Android SDK</td><td>Novice</td></tr>
+	<tr><td>Vue2</td>	    <td>Basic</td></tr>
     <tr><td>OpenGL</td>     <td>Novice</td></tr>
 </table>
 </p>
-</td>
-</tr>
-<tr>
-<td style="vertical-align: top; width: 50%; padding-top: 1em;">
+<br>
 <h4>Programming Tools</h4>
 <p>
 <table>
 	<tr><td>Jenkins</td>	<td>Strong</td></tr>
     <tr><td>Linux</td>      <td>Strong</td></tr>
 	<tr><td>RegEx</td>	    <td>Experienced</td></tr>
-	<tr><td>SQL</td>		<td>Experienced</td></tr>
+	<tr><td>SQLite</td>		<td>Experienced</td></tr>
 </table>
 </p>
 </td>
@@ -237,9 +357,6 @@
 </table>
 
 <br>
-<p>You can also see some of my coding projects on
-	<a href="http://github.com/johan-bjareholt">http://github.com/johan-bjareholt</a>
-</p>
 </td>
 </tr>
 
@@ -251,11 +368,11 @@
 </td>
 <td class="content">
 <p class="line-spacing">
-	I have a soft spot for creating things, and it doesn't matter whether it's woodworking, electrical engineering or programming.
-	During the past years I have had a few DIY projects, including building multiple portable speakers, a electric guitar, soldering amplifier kits and tinkering with Arduino.
-	I try to always work on at least one software project, and my favorite projects to date are my own tiling window manager, lua compiler and multiple smaller games.
-	I have also helped out on a few open source projects such as minor fixes for smaller python libraries and a SoundCloud music downloader as well as multiple projects I've been working on with my brother such as a simple bitcoin trader, a home automation server and a application usage tracker.
-	Staying healthy is also important to me, so I enjoy jogging and going to the gym a few times a week.
+	I have a soft spot for creating things, most commonly something related to programming, woodworking or electrical engineering.
+	During the past years I have had a few DIY projects, including building multiple portable speakers, an electric guitar, soldering amplifier kits and tinkering with Arduino.
+	I try to always work on at least one software project, and my favorite projects to date are digital activity tracker (ActivityWatch), my own tiling window manager, a lua compiler and multiple smaller games.
+    Free Software is a movement which I'm very interested in which I try to contribute and be a part of as much as I can.
+	Staying healthy is also important to me, so I enjoy going to the gym a few times a week and jogging every now and then.
 </p>
 </td>
 </tr>
@@ -291,7 +408,7 @@
 </div>
 
 <div class="footer">
-Last updated: 2017/02/09
+Last updated: 2018/11/24
 </div>
 
 
